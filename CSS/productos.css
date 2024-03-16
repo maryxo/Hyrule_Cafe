@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    background-image: url(./../medias/Screenshot\ 2024-03-13\ 004328.png);
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9,87,58, 45%);
+    padding: 10px 80px;
+    z-index: 1000000;
+    box-shadow: 4px 13px 11px -1px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: 4px 13px 11px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 13px 11px -1px rgba(0,0,0,0.75);
+}
+
+/* Logo with Neon light effects */
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #B9F2DE;
+    text-decoration: none;
+    font-family: "Young Serif";
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 100px transparent,
+                0 0 20px #79c9ad,
+                0 0 40px #81c4ab;
+}
+
+
+header ul {
+position: relative;
+display: flex;
+justify-content: right;
+gap: 10px;
+align-items: right;
+padding-left: 20%;
+list-style: none;
+}
+
+header li {
+    position: relative;
+    list-style: none;
+
+}
+
+header li a {
+    position: relative;
+    margin: 0 10px;
+    color: #f5f2b5;
+    letter-spacing: 3px;
+    font-weight: 1000px;
+    font-family: "Young Serif";
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: 0 0 100px transparent,
+    0 0 20px #F4EC46,
+    0 0 40px #f5ea24;
+}
+
+/* Nav search box */
+.search-box input{
+    padding: 8px;
+    padding-right: 160px;
+    box-sizing: border-box;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #f5f2b5;
+    border-radius: 10px;
+    outline: none;
+}
+
+.fi-br-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 90px;
+    color: #f5f2b5;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+    color: #f5f2b5;
+}
+
+@media screen and (max-width: 425px) {
+    .search-box {
+        width: 95%;
+    }
+}
+
+.main-image {
+    position: relative;
+    background: url(./../medias/Hyrule_cafe_menu.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+}
+
+.container {
+    position:absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #EEF1E8;
+    font-weight: 300;
+}
+
+.cen {
+    margin: 30px;
+    display: block;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Menu cards */
+.food {
+    background-color: rgba(7, 54, 37, 0.45);
+    width: 98%;
+    height: 700px;
+    margin-top: 200px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    padding-top: 50px;
+} 
+
+.first-card {
+    width: 400px;
+    height: 565px;
+    margin: 10px;
+    background-image: url(./../medias/food_menu.jpg);
+    border-radius: 30px;
+}
+.text-over-image {
+    color: #EEF1E8;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    position: relative;
+    margin-top: 50%;
+    text-align: center;
+
+}
+
+.cards {
+    width: 300px;
+    height: 40%;
+    margin: 10px;
+    background-color: #C6BC8B;
+    border-radius: 30px;
+}
+
+div #first-image {
+    border-radius: 0px 0px 30px 30px;
+    width: 100%;
+}
+.card-img img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-content h2 {
+    text-align: center;
+    color: #4B431E;
+    margin-top: 20px;
+}
+
+.card-content p {
+    text-align: center;
+    margin-top: 30px;
+    color: #4B431E;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.food-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.food-price p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #4B431E;
+}
+
+/* When hovering effect */
+
+.cards:hover {
+    box-shadow: 1px 3px 27px 1px rgba(255, 249, 196, 0.75);
+-webkit-box-shadow: 1px 3px 27px 1px rgba(224, 216, 96, 0.75);
+-moz-box-shadow: 1px 3px 27px 1px rgba(238, 226, 61, 0.75);
+}
+
+.dessert {
+    padding-left: 50px;
+    background-color: rgba(68, 71, 70, 0.45);
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+}
+
+.second-card {
+    width: 400px;
+    height: 530px;
+    margin: 10px;
+    background-image: url(./../medias/dessert_menu.jpg);
+    border-radius: 30px;
+}
+
+.text-over-image-2 {
+    color: #EEF1E8;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    position: relative;
+    margin-top: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.drinks {
+    background-color: rgba(7, 54, 37, 0.45);
+    width: 98%;
+    height: 700px;
+    margin-top: 100px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -26px 66px -13px rgba(0,0,0,0.75);
+}
+
+.third-card {
+    width: 400px;
+    height: 565px;
+    margin: 10px;
+    background-image: url(./../medias/drinks_menu.jpg);
+    border-radius: 30px;
+}
+
+/* Grid images */
+.img-area {
+    background-color:rgba(68, 71, 70, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+}
+
+
+.wrapper {
+    max-width: 1280px;
+    padding: 50px 20px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-gap: 15px;
+    width: 100%;
+}
+
+.single-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.single-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.9s;
+    user-select: none;
+    border-radius: 20px;
+}
+
+.single-box a:hover img {
+    transform: rotate(5deg) scale(1.3);
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    margin-top: 80px;
+    background-color: #4B431E;
+    box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 3px 27px 1px rgba(0,0,0,0.75);
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #D4CE46;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.social-media-icons a i {
+    font-size: 25px;
+    color: #09573A;
+    opacity: 0.9;
+}
+
+/* Effects when hovering over the icons */
+
+.social-media-icons a:hover {
+    background-color: #f5f2b5;
+    border-radius: 50%;
+    text-shadow: 0 0 100px transparent,
+    0 0 20px #F4EC46,
+    0 0 40px #f5ea24;
+    transition: 0.6s;
+}
+
+.social-media-icons a i:hover {
+    color: #10a06b;
+    transition: 0.5s;
+}
+
+.footer-copyright {
+    background-color: rgba(87, 86, 9, 0.45);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: #EEF1E8;
+}
+
+.footer-copyright a:hover {
+    text-shadow: 0 0 100px transparent,
+    0 0 20px #F4EC46,
+    0 0 40px #f5ea24;
+    transition: 0.6s;
+}
+.footer-copyright p {
+    color: #EEF1E8;
+}
+
+
